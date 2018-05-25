@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F72349CF-63EF-46E3-982C-2A00A43BCB1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Form1</RootNamespace>
+    <AssemblyName>Form1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.1.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="libBarCode, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\libBarCode.dll</HintPath>
+    </Reference>
+    <Reference Include="libData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\libData.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDatosSQL.cs" />
+    <Compile Include="Clientes.cs" />
+    <Compile Include="Contactos.cs" />
+    <Compile Include="Empleados.cs" />
+    <Compile Include="Factores.cs" />
+    <Compile Include="FormAltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaCliente.Designer.cs">
+      <DependentUpon>FormAltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaProveedores.Designer.cs">
+      <DependentUpon>FormAltaProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaExistencias.Designer.cs">
+      <DependentUpon>FormListaExistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOEN_GENERAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOEN_GENERAL.Designer.cs">
+      <DependentUpon>FormOEN_GENERAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOEN_INDIVIDUAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOEN_INDIVIDUAL.Designer.cs">
+      <DependentUpon>FormOEN_INDIVIDUAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOREP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOREP.Designer.cs">
+      <DependentUpon>FormOREP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOREP_GENERAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOREP_GENERAL.Designer.cs">
+      <DependentUpon>FormOREP_GENERAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOREP_INDIVIDUAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOREP_INDIVIDUAL.Designer.cs">
+      <DependentUpon>FormOREP_INDIVIDUAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOSA_GENERAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOSA_GENERAL.Designer.cs">
+      <DependentUpon>FormOSA_GENERAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOSA_INDIVIDUAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOSA_INDIVIDUAL.Designer.cs">
+      <DependentUpon>FormOSA_INDIVIDUAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITextEvents.cs" />
+    <Compile Include="ITextExistencias.cs" />
+    <Compile Include="ITextOEN.cs" />
+    <Compile Include="ITextOREP.cs" />
+    <Compile Include="OREP_GRAL.cs" />
+    <Compile Include="OREP_INDIV.cs" />
+    <Compile Include="OSA_GRAL.cs" />
+    <Compile Include="OSA_INDIV.cs" />
+    <Compile Include="ENTRADAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENTRADAS.Designer.cs">
+      <DependentUpon>ENTRADAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarProducto.Designer.cs">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductoSpec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductoSpec.Designer.cs">
+      <DependentUpon>FormProductoSpec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaProductos.Designer.cs">
+      <DependentUpon>FormAltaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSALIDAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSALIDAS.Designer.cs">
+      <DependentUpon>FormSALIDAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INOUT.cs" />
+    <Compile Include="OEN_GRAL.cs" />
+    <Compile Include="OEN_INDIV.cs" />
+    <Compile Include="PRODUCTOS.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores.cs" />
+    <Compile Include="ReconocerCodigo.cs" />
+    <Compile Include="SimpleFileCopy.cs" />
+    <Compile Include="StatusOREP.cs" />
+    <EmbeddedResource Include="ENTRADAS.resx">
+      <DependentUpon>ENTRADAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaCliente.resx">
+      <DependentUpon>FormAltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaProveedores.resx">
+      <DependentUpon>FormAltaProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarProducto.resx">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaExistencias.resx">
+      <DependentUpon>FormListaExistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOEN_GENERAL.resx">
+      <DependentUpon>FormOEN_GENERAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOEN_INDIVIDUAL.resx">
+      <DependentUpon>FormOEN_INDIVIDUAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOREP.resx">
+      <DependentUpon>FormOREP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOREP_GENERAL.resx">
+      <DependentUpon>FormOREP_GENERAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOREP_INDIVIDUAL.resx">
+      <DependentUpon>FormOREP_INDIVIDUAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOSA_GENERAL.resx">
+      <DependentUpon>FormOSA_GENERAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOSA_INDIVIDUAL.resx">
+      <DependentUpon>FormOSA_INDIVIDUAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductoSpec.resx">
+      <DependentUpon>FormProductoSpec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaProductos.resx">
+      <DependentUpon>FormAltaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSALIDAS.resx">
+      <DependentUpon>FormSALIDAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

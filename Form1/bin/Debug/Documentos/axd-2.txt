@@ -1,0 +1,12 @@
+*Hacer que se muesten las que faltan productos por ordenar al proveedor
+*que no se borre el formulario de crear orden al elegir otra po
+*que pase bien las cantidades y los precios
+*que regrese el reglon de la OC a PO
+que muestre todas las cotizaciones en el texbox
+Hacer que se eliga el proveedor y la moneda de la orden de compra
+Que pueda marcar un renglon como servicio
+*Hacer que se reinicie la OC
+Poder editar los datos del prveedor
+habilitar y deshabilitar bien los componentes
+Poder agregar filas nuevas si es un proyecto
+areglar lo d enviar correo

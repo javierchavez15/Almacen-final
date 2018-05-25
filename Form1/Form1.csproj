@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F72349CF-63EF-46E3-982C-2A00A43BCB1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Form1</RootNamespace>
+    <AssemblyName>Form1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.1.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="libBarCode, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\libBarCode.dll</HintPath>
+    </Reference>
+    <Reference Include="libHMI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\libHMI.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="almacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="almacen.Designer.cs">
+      <DependentUpon>almacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDatosSQL.cs" />
+    <Compile Include="clientes.cs" />
+    <Compile Include="codigos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="codigos.Designer.cs">
+      <DependentUpon>codigos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="compras.cs" />
+    <Compile Include="contactos.cs" />
+    <Compile Include="conteo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conteo.Designer.cs">
+      <DependentUpon>conteo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cotizacionproveedor.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="DbObject.cs" />
+    <Compile Include="documentos_almacen.cs" />
+    <Compile Include="empleados.cs" />
+    <Compile Include="ENTRADAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="factores.cs" />
+    <Compile Include="FormAjustarStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAjustarStock.Designer.cs">
+      <DependentUpon>FormAjustarStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaCliente.Designer.cs">
+      <DependentUpon>FormAltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaEmpleado.Designer.cs">
+      <DependentUpon>FormAltaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaProveedores.Designer.cs">
+      <DependentUpon>FormAltaProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaProyecto.Designer.cs">
+      <DependentUpon>FormAltaProyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBotoneria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBotoneria.Designer.cs">
+      <DependentUpon>FormBotoneria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCostos.Designer.cs">
+      <DependentUpon>FormCostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDevolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDevolucion.Designer.cs">
+      <DependentUpon>FormDevolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocumentos.Designer.cs">
+      <DependentUpon>FormDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPU.Designer.cs">
+      <DependentUpon>FormEditPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormENTRADAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormENTRADAS.Designer.cs">
+      <DependentUpon>FormENTRADAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInflacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInflacion.Designer.cs">
+      <DependentUpon>FormInflacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaExistencias.Designer.cs">
+      <DependentUpon>FormListaExistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOEN_GENERAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOEN_GENERAL.Designer.cs">
+      <DependentUpon>FormOEN_GENERAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOEN_INDIVIDUAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOEN_INDIVIDUAL.Designer.cs">
+      <DependentUpon>FormOEN_INDIVIDUAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOREP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOREP.Designer.cs">
+      <DependentUpon>FormOREP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOREP_GENERAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOREP_GENERAL.Designer.cs">
+      <DependentUpon>FormOREP_GENERAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOREP_INDIVIDUAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOREP_INDIVIDUAL.Designer.cs">
+      <DependentUpon>FormOREP_INDIVIDUAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOSASxPROYECTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOSASxPROYECTO.Designer.cs">
+      <DependentUpon>FormOSASxPROYECTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOSA_GENERAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOSA_GENERAL.Designer.cs">
+      <DependentUpon>FormOSA_GENERAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOSA_INDIVIDUAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOSA_INDIVIDUAL.Designer.cs">
+      <DependentUpon>FormOSA_INDIVIDUAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPROYECTOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPROYECTOS.Designer.cs">
+      <DependentUpon>FormPROYECTOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportes.Designer.cs">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRespaldoCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRespaldoCompras.Designer.cs">
+      <DependentUpon>FormRespaldoCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hmiObject.cs" />
+    <Compile Include="inventariocostos.cs" />
+    <Compile Include="ITextEvents.cs" />
+    <Compile Include="ITextExistencias.cs" />
+    <Compile Include="ITextOEN.cs" />
+    <Compile Include="ITextOREP.cs" />
+    <Compile Include="ITextProyecto.cs" />
+    <Compile Include="orep_gral.cs" />
+    <Compile Include="orep_indiv.cs" />
+    <Compile Include="osa_gral.cs" />
+    <Compile Include="osa_indiv.cs" />
+    <Compile Include="prdoducto_codigos.cs" />
+    <Compile Include="Web References\mx.org.banxico.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="entradas">
+      <SubType>Form</SubType>
+    </None>
+    <Compile Include="ENTRADAS.Designer.cs">
+      <DependentUpon>entradas</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarProducto.Designer.cs">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductoSpec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductoSpec.Designer.cs">
+      <DependentUpon>FormProductoSpec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAltaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAltaProductos.Designer.cs">
+      <DependentUpon>FormAltaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSALIDAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSALIDAS.Designer.cs">
+      <DependentUpon>FormSALIDAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inout.cs" />
+    <Compile Include="oen_gral.cs" />
+    <Compile Include="oen_indiv.cs" />
+    <Compile Include="parametro.cs" />
+    <Compile Include="polizasdb.cs" />
+    <Compile Include="productos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proveedores.cs" />
+    <Compile Include="proyectos.cs" />
+    <Compile Include="ReconocerCodigo.cs" />
+    <Compile Include="SimpleFileCopy.cs" />
+    <Compile Include="statusorep.cs" />
+    <Compile Include="usuario.cs" />
+    <Compile Include="Warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warning.Designer.cs">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="almacen.resx">
+      <DependentUpon>almacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="codigos.resx">
+      <DependentUpon>codigos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conteo.resx">
+      <DependentUpon>conteo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENTRADAS.resx">
+      <DependentUpon>entradas</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAjustarStock.resx">
+      <DependentUpon>FormAjustarStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaCliente.resx">
+      <DependentUpon>FormAltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaEmpleado.resx">
+      <DependentUpon>FormAltaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaProveedores.resx">
+      <DependentUpon>FormAltaProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaProyecto.resx">
+      <DependentUpon>FormAltaProyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBotoneria.resx">
+      <DependentUpon>FormBotoneria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarProducto.resx">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCostos.resx">
+      <DependentUpon>FormCostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDevolucion.resx">
+      <DependentUpon>FormDevolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDocumentos.resx">
+      <DependentUpon>FormDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditPU.resx">
+      <DependentUpon>FormEditPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormENTRADAS.resx">
+      <DependentUpon>FormENTRADAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInflacion.resx">
+      <DependentUpon>FormInflacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaExistencias.resx">
+      <DependentUpon>FormListaExistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOEN_GENERAL.resx">
+      <DependentUpon>FormOEN_GENERAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOEN_INDIVIDUAL.resx">
+      <DependentUpon>FormOEN_INDIVIDUAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOREP.resx">
+      <DependentUpon>FormOREP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOREP_GENERAL.resx">
+      <DependentUpon>FormOREP_GENERAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOREP_INDIVIDUAL.resx">
+      <DependentUpon>FormOREP_INDIVIDUAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOSASxPROYECTO.resx">
+      <DependentUpon>FormOSASxPROYECTO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOSA_GENERAL.resx">
+      <DependentUpon>FormOSA_GENERAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOSA_INDIVIDUAL.resx">
+      <DependentUpon>FormOSA_INDIVIDUAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductoSpec.resx">
+      <DependentUpon>FormProductoSpec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAltaProductos.resx">
+      <DependentUpon>FormAltaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPROYECTOS.resx">
+      <DependentUpon>FormPROYECTOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportes.resx">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRespaldoCompras.resx">
+      <DependentUpon>FormRespaldoCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSALIDAS.resx">
+      <DependentUpon>FormSALIDAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Warning.resx">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\mx.org.banxico.www\DgieWS.wsdl" />
+    <None Include="Web References\mx.org.banxico.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.banxico.org.mx/DgieWSWeb/DgieWS%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\mx.org.banxico.www\</RelPath>
+      <UpdateFromURL>http://www.banxico.org.mx/DgieWSWeb/DgieWS%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Form1_mx_org_banxico_www_DgieWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
